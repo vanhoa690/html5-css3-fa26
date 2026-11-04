@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div id="main">
+        <div id="header">
+            <div class="top-header">
+                <div class="menu">
+                    <ul>
+                        <li><a href="#">Trang chủ</a></li>
+                        <li><a href="#">Bánh Ngọt</a></li>
+                        <li><a href="#">Bánh Kem</a></li>
+                        <li><a href="#">Bánh Bao</a></li>
+                        <li><a href="#">Liên Hệ</a></li>
+                    </ul>
+                </div>
+                <div class="search">
+                    <form action="">
+                        <input type="text" required>
+                        <button>Tìm kiếm</button>
+                    </form>
+                    
+                </div>
+            </div>
+
+            <div class="logo">
+                <canvas id="myCanvas" width="400" height="200"></canvas>
+            </div>
+
+            <div class="banner">
+                <img src="./image/banner.jpg" alt="">
+            </div>
+        </div>
+        <div id="content">
+            <h1>Ưu Đãi Dành Riêng Cho Bạn</h1>
+            <div class="products">
+                <div class="item">
+                    <img src="./image/anh_1.png" alt="">
+                    <h2>Freeze Trà Xanh</h2>
+                    <p>25.000đ <del>35.000đ</del></p>
+                </div>
+                <div class="item">
+                    <img src="./image/anh_2.png" alt="">
+                    <h2>Freeze Trà Xanh</h2>
+                    <p>25.000đ <del>35.000đ</del></p>
+                </div>
+                <div class="item">
+                    <img src="./image/anh_3.png" alt="">
+                    <h2>Freeze Trà Xanh</h2>
+                    <p>25.000đ <del>35.000đ</del></p>
+                </div>
+                <div class="item">
+                    <img src="./image/anh_4.png" alt="">
+                    <h2>Freeze Trà Xanh</h2>
+                    <p>25.000đ <del>35.000đ</del></p>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <h1>Copyright © 2024 Design by Ochna</h1>
+        </div>
+    </div>
+
+    <script>
+        var canvas = document.getElementById('myCanvas');
+        var context = canvas.getContext('2d');
+        var centerX = canvas.width / 2;
+        var centerY = canvas.height / 2;
+        var radiusX = 75; // Bán kính theo trục x
+        var radiusY = 30; // Bán kính theo trục y
+
+        context.beginPath();
+        context.ellipse(centerX, centerY, radiusX, radiusY, 0, 0, 2 * Math.PI);
+        context.fillStyle = '#e59999';
+        context.fill();
+        context.closePath();
+
+        // Vẽ chữ "water"
+        var textWater = 'water';
+        context.font = '20px sans-serif';
+        context.fillStyle = 'black'; // Màu chữ "water"
+        context.textAlign = 'center';
+        var textWaterWidth = context.measureText(textWater).width;
+        context.fillText(textWater, centerX - textWaterWidth / 2, centerY + 5);
+
+        // Vẽ chữ "love"
+        var textLove = 'love';
+        context.fillStyle = 'white'; // Màu chữ "love"
+        var textLoveWidth = context.measureText(textLove).width;
+        context.fillText(textLove, centerX + 30, centerY + 5);
+    </script>
+</body>
+
+</html>
