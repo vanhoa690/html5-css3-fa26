@@ -1,8 +1,8 @@
-# BÀI GIỚI THIỆU MÔN HỌC & BÀI 1: GIỚI THIỆU HTML5 (BẢN TÓM TẮT DỄ NHỚ)
+## BÀI GIỚI THIỆU MÔN HỌC & BÀI 1: GIỚI THIỆU HTML5
 
 ---
 
-## 📌 0. GIỚI THIỆU MÔN HỌC (TÓM TẮT 3 DÒNG)
+### GIỚI THIỆU MÔN HỌC
 
 - **Tên môn học**: Thiết kế Web với HTML5 & CSS3 (Đào tạo theo chuẩn CDIO: _Thực học - Thực nghiệp_).
 - **Mục tiêu cốt lõi**: Bỏ thói quen dựng layout bằng `<div>` phi ngữ nghĩa $\rightarrow$ Chuyển sang **Web Ngữ nghĩa (Semantic Web)** & **Responsive Web Design (RWD)**.
@@ -10,7 +10,7 @@
 
 ---
 
-## 1. CẤU TRÚC KHUNG HTML5 CHUẨN
+### 1. CẤU TRÚC KHUNG HTML5 CHUẨN
 
 ```html
 <!DOCTYPE html>
@@ -33,9 +33,9 @@
 
 ---
 
-## 2. 5 THẺ KHU VỰC LAYOUT (SEMANTIC TAGS)
+### 2. 5 THẺ KHU VỰC LAYOUT (SEMANTIC TAGS)
 
-### Sơ Đồ Khung Bố Cục Trang Web
+#### Sơ Đồ Khung Bố Cục Trang Web
 
 ```text
 +--------------------------------------------------+
@@ -53,7 +53,7 @@
 +--------------------------------------------------+
 ```
 
-### Bảng Tóm Tắt Chức Năng Cốt Lõi
+#### Bảng Tóm Tắt Chức Năng Cốt Lõi
 
 | Thẻ            | Vai Trò                  | Quy Tắc Nhớ Nhanh                                            |
 | :------------- | :----------------------- | :----------------------------------------------------------- |
@@ -65,14 +65,14 @@
 
 ---
 
-## 3. PHÂN BIỆT `<section>` VS `<article>` (CÔNG THỨC 1 CÂU)
+### 3. PHÂN BIỆT `<section>` VS `<article>` (CÔNG THỨC 1 CÂU)
 
 💡 **Công thức ghi nhớ thuộc lòng**:
 
 > - **`<section>`** = **Phân đoạn logic** theo chủ đề (Thường bắt buộc có tiêu đề `<h2>`-`<h6>`).
 > - **`<article>`** = **Bài viết độc lập** (Tách ra đăng trang khác người đọc vẫn hiểu đầy đủ).
 
-### So Sánh Nhanh
+#### So Sánh Nhanh
 
 | Tiêu Chí     | `<section>`                             | `<article>`                                  |
 | :----------- | :-------------------------------------- | :------------------------------------------- |
@@ -82,16 +82,16 @@
 
 ---
 
-## 4. FORM 2.0: INPUT & THUỘC TÍNH MỚI
+### 4. FORM 2.0: INPUT & THUỘC TÍNH MỚI
 
-### 4.1 Thuộc Tính Mới Của Input
+#### 4.1 Thuộc Tính Mới Của Input
 
 - **`placeholder="..."`**: Chữ gợi ý mờ trong ô input (tự mất khi gõ).
 - **`required`**: Bắt buộc nhập (chặn submit nếu bỏ trống).
 - **`autofocus`**: Tự động đưa con trỏ chuột vào ô khi vừa mở trang.
 - **`multiple`**: Chọn nhiều file (cho `type="file"`) hoặc nhiều email.
 
-### 4.2 Bảng Tra Cứu Kiểu Input (`type="..."`)
+#### 4.2 Bảng Tra Cứu Kiểu Input (`type="..."`)
 
 | `type="..."` | Chức Năng                           | Code Mẫu Siêu Gọn                                          |
 | :----------- | :---------------------------------- | :--------------------------------------------------------- |
@@ -104,9 +104,9 @@
 
 ---
 
-## 5. THẺ MEDIA: `<video>` & `<audio>`
+### 5. THẺ MEDIA: `<video>` & `<audio>`
 
-### Cú Pháp Chuẩn Nhớ Nhanh
+#### Cú Pháp Chuẩn Nhớ Nhanh
 
 ```html
 <!-- Thẻ Video -->
@@ -122,7 +122,7 @@
 </audio>
 ```
 
-### Bảng 5 Thuộc Tính Vàng
+#### Bảng 5 Thuộc Tính Vàng
 
 | Thuộc Tính     | Công Dụng                                                                 |
 | :------------- | :------------------------------------------------------------------------ |
@@ -134,9 +134,9 @@
 
 ---
 
-## 6. BÀI TẬP THỰC HÀNH XUYÊN SUỐT (LIỀN MẠCH - SÁT ĐỀ THI)
+### 6. BÀI TẬP THỰC HÀNH XUYÊN SUỐT (LIỀN MẠCH - SÁT ĐỀ THI)
 
-### Đề bài: Dựng trang "Hồ Sơ Cá Nhân & Đăng Ký Học Viên" chuẩn HTML5 đầy đủ Semantic + Form 2.0 + Media.
+#### Đề bài: Dựng trang "Hồ Sơ Cá Nhân & Đăng Ký Học Viên" chuẩn HTML5 đầy đủ Semantic + Form 2.0 + Media.
 
 ```html
 <!DOCTYPE html>
@@ -228,7 +228,7 @@
 
 ---
 
-## 7. CHEAT SHEET ÔN THI (10 CÂU TRẮC NGHIỆM CỐT LÕI)
+#### 7. ÔN LẠI 10 CÂU TRẮC NGHIỆM CỐT LÕI
 
 1. **Thẻ khai báo chuẩn HTML5 là gì?**  
    $\rightarrow$ `<!DOCTYPE html>`
@@ -253,7 +253,7 @@
 
 ---
 
-### 5 QUY TẮC "ĂN ĐIỂM" KHI LÀM BÀI THI THỰC HÀNH
+#### 5 QUY TẮC "ĂN ĐIỂM" KHI LÀM BÀI THI THỰC HÀNH
 
 1. **Dòng 1 luôn khai báo**: `<!DOCTYPE html>`.
 2. **Tuyệt đối không lạm dụng `<div>`**: Dùng chuẩn các thẻ `<header>`, `<nav>`, `<main>`, `<section>`, `<article>`, `<aside>`, `<footer>`.
@@ -261,7 +261,7 @@
 4. **Khai báo thuộc tính Form chuẩn xác**: Thêm `required` cho các ô bắt buộc, `placeholder` để gợi ý.
 5. **Trình bày code sạch đẹp**: Thụ đầu dòng lùi lề phân cấp rõ ràng để giám thị dễ chấm điểm.
 
-#### 7.1 Bộ 10 Câu Hỏi Trắc Nghiệm Mẫu (Có Đáp Án & Giải Thích)
+#### 7.1 Bộ 10 Câu Hỏi Trắc Nghiệm
 
 **Câu 1**: Thẻ khai báo nào sau đây xác định tài liệu chuẩn HTML5?
 
