@@ -24,7 +24,7 @@
 
 | Bộ Chọn       | Ký Hiệu      | Ví Dụ                           | Ý Nghĩa                             |
 | :------------ | :----------- | :------------------------------ | :---------------------------------- |
-| \*\*Universal | `*`          | `* { box-sizing: border-box; }` | Chọn tất cả phần tử                 |
+| **Universal** | `*`          | `* { box-sizing: border-box; }` | Chọn tất cả phần tử                 |
 | **Element**   | `tên_thẻ`    | `p { color: #333; }`            | Chọn theo tên thẻ HTML              |
 | **Class**     | `.tên_class` | `.btn { background: green; }`   | Chọn theo class (Dùng nhiều lần)    |
 | **ID**        | `#tên_id`    | `#logo { width: 100px; }`       | Chọn theo ID (**Duy nhất** 1 trang) |
@@ -56,10 +56,10 @@
 +---+---+---+-----------+---+---+---+
 ```
 
-### 3.2 Bí Kíp Đi Thi: `content-box` vs `border-box`
+### 3.2 Bí Kíp: `content-box` vs `border-box`
 
 - **`content-box`** (Mặc định): `Width thực = width + padding + border` $\rightarrow$ **Dễ vỡ layout**.
-- **`border-box`**: `Width thực = width cố định` (Padding & border tự co vào trong) $\rightarrow$ ✅ **Luôn reset ở dòng 1 file CSS**:
+- **`border-box`**: ✅ **Luôn reset ở dòng 1 file CSS**: `Width thực = width cố định` (Padding & border tự co vào trong)
 
 ```css
 * {
@@ -71,7 +71,7 @@
 
 ---
 
-## 4. TEXT, FONT & BACKGROUND (CHEATSHEET 1 DÒNG)
+## 4. TEXT, FONT & BACKGROUND
 
 - **`font-family`**: Họ font (`Arial, sans-serif`).
 - **`font-size`**: Kích thước chữ (`16px`, `1.2rem`).
