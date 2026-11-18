@@ -9,29 +9,19 @@
 - **Tác dụng**: Đẩy phần tử sang bên trái (`float: left;`) hoặc bên phải (`float: right;`) để văn bản/phần tử khác bao quanh.
 - **Hiện tượng trôi (Float collapse)**: Khi các phần tử con dùng `float`, phần tử cha sẽ bị mất chiều cao (height = 0).
 
-### 1.2 3 Cách Khắc Phục Lỗi Float (Clearfix)
-
-| Phương Pháp               | Cú Pháp CSS                                                    | Nhận Xét / Lời Khuyên                                    |
-| :------------------------ | :------------------------------------------------------------- | :------------------------------------------------------- |
-| **Dùng thẻ `clear`**      | `<div style="clear: both;"></div>`                             | ❌ Làm bẩn HTML (thêm thẻ thừa).                         |
-| **`overflow: hidden;`**   | `.parent { overflow: hidden; }`                                | ⚠️ Đơn giản nhưng có thể che mất nội dung tràn ra ngoài. |
-| **Clearfix Hack (Chuẩn)** | `.parent::after { content: ""; display: table; clear: both; }` | ✅ **Khuyên dùng**: Không bẩn HTML, hoạt động ổn định.   |
-
----
-
 ## 2. QUẢN LÝ VỊ TRÍ PHẦN TỬ VỚI CSS POSITION
 
 ### 2.1 Bảng Tra Cứu 5 Giá Trị Position (CÔNG THỨC ĂN ĐIỂM THI)
 
-| Position       | Vị Trí Làm Mốc                                        | Có Làm Mất Trôi (Flow)?  | Ứng Dụng Thực Tế                   |
-| :------------- | :---------------------------------------------------- | :----------------------- | :--------------------------------- |
-| **`static`**   | Tự nhiên theo luồng web                               | ❌ Không                 | Mặc định của tất cả thẻ.           |
-| **`relative`** | **Chính vị trí ban đầu** của nó                       | ❌ Không (vẫn giữ chỗ)   | Dùng làm mốc cho con `absolute`.   |
-| **`absolute`** | **Cha gần nhất** có `position` khác `static`          | ✅ Có (bay khỏi luồng)   | Popup, Icon badge, Banner overlay. |
-| **`fixed`**    | **Khung nhìn trình duyệt (Viewport)**                 | ✅ Có (cố định khi cuộn) | Header cố định, Nút Back-to-top.   |
-| **`sticky`**   | Cuộn bình thường $\rightarrow$ Dính chặt khi chạm mép | ❌ Không                 | Sticky Header, Sidebar danh mục.   |
+| Position       | Vị Trí Làm Mốc                                        | Có Làm Mất Trôi (Flow)? | Ứng Dụng Thực Tế                   |
+| :------------- | :---------------------------------------------------- | :---------------------- | :--------------------------------- |
+| **`static`**   | Tự nhiên theo luồng web                               | Không                   | Mặc định của tất cả thẻ.           |
+| **`relative`** | **Chính vị trí ban đầu** của nó                       | Không (vẫn giữ chỗ)     | Dùng làm mốc cho con `absolute`.   |
+| **`absolute`** | **Cha gần nhất** có `position` khác `static`          | Có (bay khỏi luồng)     | Popup, Icon badge, Banner overlay. |
+| **`fixed`**    | **Khung nhìn trình duyệt (Viewport)**                 | Có (cố định khi cuộn)   | Header cố định, Nút Back-to-top.   |
+| **`sticky`**   | Cuộn bình thường $\rightarrow$ Dính chặt khi chạm mép | Không                   | Sticky Header, Sidebar danh mục.   |
 
-> **Bí kíp cặp đôi huyền thoại**: Muốn con bay tự do theo cha $\rightarrow$ **Cha đặt `position: relative;`**, **Con đặt `position: absolute;`**.
+> **Bí kíp**: Muốn con bay tự do theo cha $\rightarrow$ **Cha đặt `position: relative;`**, **Con đặt `position: absolute;`**.
 
 ### 2.2 Thuộc Tính `z-index`
 
@@ -77,7 +67,7 @@ Main Start ───►   [Item 1] [Item 2] [Item 3]   ───► Main End (Ma
 
 ---
 
-## 4. BÀI TẬP THỰC HÀNH XUYÊN SUỐT: DỰNG LAYOUT WEBSITE ĐA CỘT HOÀN CHỈNH
+## 4. BÀI TẬP DỰNG LAYOUT WEBSITE ĐA CỘT HOÀN CHỈNH
 
 ### Yêu cầu: Dựng giao diện trang web gồm Header cố định (`fixed`), Menu + Layout 2 cột (Main & Sidebar) bằng `flexbox`, Footer ở dưới cùng.
 
@@ -194,7 +184,7 @@ Main Start ───►   [Item 1] [Item 2] [Item 3]   ───► Main End (Ma
 
 ---
 
-## 5. NGÂN HÀNG 10 CÂU HỎI TRẮC NGHIỆM ÔN TẬP BÀI 3 (CÓ ĐÁP ÁN & GIẢI THÍCH)
+## 5. 10 CÂU HỎI TRẮC NGHIỆM
 
 **Câu 1**: Trong CSS Position, giá trị nào khiến phần tử bị rút khỏi luồng thông thường và đặt vị trí dựa theo khung nhìn (Viewport) trình duyệt?
 
